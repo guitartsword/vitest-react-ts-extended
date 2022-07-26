@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom' // works with vitest
 
 // Polyfill "window.fetch" used in the React component.
 import 'whatwg-fetch'

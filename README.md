@@ -2,7 +2,7 @@
 
 > My CRA alternative.  
 > Create plain and lightweight React+TS programming environment with familiar pre-setup tooling  
-> eslint/prettier, jest/TS/react-testing-library/msw, tailwindcss, CI.
+> eslint/prettier, vitest/TS/react-testing-library/msw, tailwindcss, CI.
 
 ## [Try this Online!](https://codesandbox.io/s/laststance-vite-react-ts-extended-je09qc?file=/src/App.tsx)
 
@@ -11,25 +11,24 @@
 This is the official [Vite](https://vitejs.dev/) [react-ts](https://stackblitz.com/edit/vitejs-vite-is3dmk?file=index.html&terminal=dev) template(`npm init vite@latest myapp -- --template react-ts`) and some extended setup.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
-- [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
+- [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
 - [Github Actions](https://github.com/features/actions)
 
-All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 # Installation
 
 ```
-npx degit laststance/vite-react-ts-extended myapp
+npx degit guitartsword/vitest-react-ts-extended myapp
 ```
 
-### yarn
+### pnpm
 
 ```sh
 cd myapp
-yarn install
-yarn validate # The installation was successful if no error occurs after running 'validate'.
-yarn dev
+pnpm install
+pnpm validate # The installation was successful if no error occurs after running 'validate'.
+pnpm dev
 ```
 
 ### npm
@@ -44,16 +43,18 @@ npm run dev
 ### Commands
 
 ```sh
-yarn dev       # start development server
-yarn validate  # run test,lint,build,typecheck concurrently
-yarn test      # run jest
-yarn lint      # run eslint
-yarn lint:fix  # run eslint with --fix option
-yarn typecheck # run TypeScript compiler check
-yarn build     # build production bundle to 'dist' directly
-yarn prettier  # run prettier for json|yml|css|md|mdx files
-yarn clean     # remove 'node_modules' 'yarn.lock' 'dist' completely
-yarn serve     # launch server for production bundle in local
+pnpm dev            # start development server
+pnpm validate       # run test,lint,build,typecheck concurrently
+pnpm test           # run vitest without watch mode
+pnpm test:ui        # run tests with ui (Really awesome)
+pnpm test:watch     # run vitest in watch mode
+pnpm lint           # run eslint
+pnpm lint:fix       # run eslint with --fix option
+pnpm typecheck      # run TypeScript compiler check
+pnpm build          # build production bundle to 'dist' directly
+pnpm prettier       # run prettier for json|yml|css|md|mdx files
+pnpm clean          # remove 'node_modules' 'pnpm-lock.yaml' 'dist' completely
+pnpm serve          # launch server for production bundle in local
 ```
 
 
@@ -83,9 +84,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://hung.dev"><img src="https://avatars.githubusercontent.com/u/8603085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hung Viet Nguyen</b></sub></a><br /><a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=nvh95" title="Code">💻</a></td>
-    <td align="center"><a href="https://linktr.ee/guitart"><img src="https://avatars.githubusercontent.com/u/12071733?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Isaias Valle</b></sub></a><br /><a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=guitartsword" title="Code">💻</a></td>
+    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/vite-react-ts-extended/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/vite-react-ts-extended/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/vite-react-ts-extended/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://hung.dev"><img src="https://avatars.githubusercontent.com/u/8603085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hung Viet Nguyen</b></sub></a><br /><a href="https://github.com/laststance/vite-react-ts-extended/commits?author=nvh95" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/guitartsword"><img src="https://avatars.githubusercontent.com/u/12071733?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Isaias Valle</b></sub></a><br /><a href="https://github.com/guitartsword/vitest-react-ts-extended/commits?author=guitartsword" title="Code">💻</a></td>
   </tr>
 </table>
 
