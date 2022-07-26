@@ -1,6 +1,6 @@
 {
-  "projectName": "vite-react-ts-extended",
-  "projectOwner": "laststance",
+  "projectName": "vitest-react-ts-extended",
+  "projectOwner": "guitartsword",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -26,6 +26,15 @@
       "name": "Hung Viet Nguyen",
       "avatar_url": "https://avatars.githubusercontent.com/u/8603085?v=4",
       "profile": "https://hung.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "guitartsword",
+      "name": "Isaias Valle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12071733?v=4",
+      "profile": "https://linktr.ee/guitart",
       "contributions": [
         "code"
       ]
