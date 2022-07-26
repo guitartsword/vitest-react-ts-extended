@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './index.css'
 import logo from './logo.svg'
@@ -24,7 +24,7 @@ const App: React.FC = () => {
     <main className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>Hello Vitest + React!</p>
         <p>
           <button
             type="button"
